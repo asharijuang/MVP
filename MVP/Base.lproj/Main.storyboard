@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="85.5" width="320" height="482.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="80" id="1vv-sw-266">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="80" id="1vv-sw-266" customClass="ChatCell" customModule="MVP" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1vv-sw-266" id="Tt7-HI-c0p">
@@ -52,6 +52,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelMessage" destination="3Qr-tc-G5t" id="bnc-Oe-qe7"/>
+                                            <outlet property="labelName" destination="w3s-hR-Adg" id="bzN-gk-IGy"/>
+                                            <outlet property="labelUnread" destination="BYR-9f-2eD" id="sph-66-iBc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

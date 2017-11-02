@@ -14,6 +14,10 @@
 		0457BC781FAA9C74008D3866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0457BC761FAA9C74008D3866 /* LaunchScreen.storyboard */; };
 		0457BC831FAA9C74008D3866 /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457BC821FAA9C74008D3866 /* MVPTests.swift */; };
 		0457BC8E1FAA9C74008D3866 /* MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457BC8D1FAA9C74008D3866 /* MVPUITests.swift */; };
+		0457BC9F1FAAA830008D3866 /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457BC9E1FAAA830008D3866 /* ChatPresenter.swift */; };
+		0457BCA11FAAA86E008D3866 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457BCA01FAAA86E008D3866 /* Room.swift */; };
+		0457BCA31FAAA8EF008D3866 /* RoomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457BCA21FAAA8EF008D3866 /* RoomService.swift */; };
+		0457BCA51FAAB54D008D3866 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457BCA41FAAB54D008D3866 /* ChatCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		0457BC891FAA9C74008D3866 /* MVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0457BC8D1FAA9C74008D3866 /* MVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITests.swift; sourceTree = "<group>"; };
 		0457BC8F1FAA9C74008D3866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0457BC9E1FAAA830008D3866 /* ChatPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
+		0457BCA01FAAA86E008D3866 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		0457BCA21FAAA8EF008D3866 /* RoomService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomService.swift; sourceTree = "<group>"; };
+		0457BCA41FAAB54D008D3866 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				0457BC6F1FAA9C74008D3866 /* ViewController.swift */,
+				0457BCA41FAAB54D008D3866 /* ChatCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -138,6 +147,7 @@
 		0457BC9C1FAA9C9A008D3866 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				0457BC9E1FAAA830008D3866 /* ChatPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -145,6 +155,8 @@
 		0457BC9D1FAA9CAD008D3866 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0457BCA01FAAA86E008D3866 /* Room.swift */,
+				0457BCA21FAAA8EF008D3866 /* RoomService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,8 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0457BC9F1FAAA830008D3866 /* ChatPresenter.swift in Sources */,
 				0457BC701FAA9C74008D3866 /* ViewController.swift in Sources */,
+				0457BCA11FAAA86E008D3866 /* Room.swift in Sources */,
 				0457BC6E1FAA9C74008D3866 /* AppDelegate.swift in Sources */,
+				0457BCA31FAAA8EF008D3866 /* RoomService.swift in Sources */,
+				0457BCA51FAAB54D008D3866 /* ChatCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qiscusdev.mvp.MVP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -471,7 +487,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qiscusdev.mvp.MVP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
