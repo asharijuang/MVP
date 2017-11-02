@@ -98,7 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				0457BC6D1FAA9C74008D3866 /* AppDelegate.swift */,
-				0457BC6F1FAA9C74008D3866 /* ViewController.swift */,
+				0457BC9D1FAA9CAD008D3866 /* Model */,
+				0457BC9C1FAA9C9A008D3866 /* Presenter */,
+				0457BC9B1FAA9C87008D3866 /* View */,
 				0457BC711FAA9C74008D3866 /* Main.storyboard */,
 				0457BC741FAA9C74008D3866 /* Assets.xcassets */,
 				0457BC761FAA9C74008D3866 /* LaunchScreen.storyboard */,
@@ -123,6 +125,28 @@
 				0457BC8F1FAA9C74008D3866 /* Info.plist */,
 			);
 			path = MVPUITests;
+			sourceTree = "<group>";
+		};
+		0457BC9B1FAA9C87008D3866 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0457BC6F1FAA9C74008D3866 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0457BC9C1FAA9C9A008D3866 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0457BC9D1FAA9CAD008D3866 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
