@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Protocol to comunicate presenter -> View
 protocol ChatView {
     func startLoading()
     func finishLoading()
@@ -47,20 +48,4 @@ class ChatPresenter {
             
         }
     }
-//
-//    func getUsers(){
-//        self.userView?.startLoading()
-//        userService.getUsers{ [weak self] users in
-//            self?.userView?.finishLoading()
-//            if(users.count == 0){
-//                self?.userView?.setEmptyUsers()
-//            }else{
-//                let mappedUsers = users.map{
-//                    return UserViewData(name: "\($0.firstName) \($0.lastName)", age: "\($0.age) years")
-//                }
-//                self?.userView?.setUsers(mappedUsers)
-//            }
-//
-//        }
-//    }
 }

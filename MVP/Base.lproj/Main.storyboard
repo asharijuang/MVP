@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="c8f-qY-KkS">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="43f-Jr-2EL">
                                 <rect key="frame" x="0.0" y="85.5" width="320" height="482.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,21 +69,33 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conversation List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzN-o1-tbw">
-                                <rect key="frame" x="16" y="40" width="288" height="31.5"/>
+                                <rect key="frame" x="16" y="40" width="246.5" height="31.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O74-WN-iOA">
+                                <rect key="frame" x="272.5" y="40" width="31.5" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="O74-WN-iOA" secondAttribute="height" multiplier="1:1" id="xdg-X4-eCw"/>
+                                </constraints>
+                                <state key="normal" title="➕"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="O74-WN-iOA" firstAttribute="bottom" secondItem="kzN-o1-tbw" secondAttribute="bottom" id="4gW-A1-LQv"/>
                             <constraint firstItem="43f-Jr-2EL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8Kh-Ac-NMG"/>
+                            <constraint firstItem="c8f-qY-KkS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P03-EI-EkX"/>
                             <constraint firstItem="kzN-o1-tbw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="P2x-Q7-FhL"/>
+                            <constraint firstItem="O74-WN-iOA" firstAttribute="leading" secondItem="kzN-o1-tbw" secondAttribute="trailing" constant="10" id="S1S-Fi-Aqi"/>
+                            <constraint firstItem="c8f-qY-KkS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W4b-AZ-RN8"/>
+                            <constraint firstItem="O74-WN-iOA" firstAttribute="top" secondItem="kzN-o1-tbw" secondAttribute="top" id="ian-Nr-s9G"/>
                             <constraint firstItem="43f-Jr-2EL" firstAttribute="top" secondItem="kzN-o1-tbw" secondAttribute="bottom" constant="14" id="job-Zn-sQa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O74-WN-iOA" secondAttribute="trailing" constant="16" id="oAz-G9-DwT"/>
                             <constraint firstItem="43f-Jr-2EL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r17-uM-7aJ"/>
                             <constraint firstItem="kzN-o1-tbw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tMi-0H-D1l"/>
                             <constraint firstItem="43f-Jr-2EL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uTE-4V-5QY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kzN-o1-tbw" secondAttribute="trailing" constant="16" id="vU1-p1-OaC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
